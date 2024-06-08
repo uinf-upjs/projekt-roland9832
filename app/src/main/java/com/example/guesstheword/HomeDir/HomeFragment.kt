@@ -16,7 +16,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class HomeFragment : Fragment(), OnItemClickListener {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
@@ -34,21 +35,25 @@ class HomeFragment : Fragment(), OnItemClickListener {
         }
 
         // Setup BottomNavigationView
-        val bottomNavigationView = view.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val bottomNavigationView =
+            view.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
                     findNavController().navigate(R.id.homeFragment)
                     true
                 }
+
                 R.id.profile -> {
                     // Handle profile navigation
                     true
                 }
+
                 R.id.settings -> {
                     // Handle settings navigation
                     true
                 }
+
                 else -> false
             }
         }
