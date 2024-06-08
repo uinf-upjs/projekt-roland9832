@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".HomeFragment"
-    tools:viewBindingIgnore="true">
-
-
+    tools:context=".HomeDir.HomeFragment">
 
     <Button
         android:id="@+id/back_button"
@@ -47,160 +43,31 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913"
-        app:menu="@menu/bottom_nav_menu"/>
-
-    <ScrollView
-        android:layout_width="418dp"
-        android:layout_height="450dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="130dp"
-        tools:ignore="MissingConstraints">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:rowCount="4"
-            android:translationY="70sp"
-            tools:ignore="MissingConstraints">
-
-            <Button
-                android:id="@+id/A"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="A"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/B"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="B"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/C"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="C"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/D"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="D"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/E"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="D"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/F"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="F"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/G"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="G"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/H"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="H"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/I"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="I"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/J"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="J"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/K"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="K"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/L"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="5sp"
-                android:layout_marginBottom="20sp"
-                android:text="L"
-                android:textSize="18sp" />
-
-        </GridLayout>
-    </ScrollView>
+        app:layout_constraintVertical_bias="0.913"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chose your letter"
+        android:text="Choose your letter"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="96dp"
         tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/recyclerView"
+        tools:listitem="@layout/item_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

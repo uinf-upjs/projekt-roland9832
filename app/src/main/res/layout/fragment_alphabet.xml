@@ -1,119 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/alphabet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlphabetFragment">
+    tools:context=".AlphabetDir.AlphabetFragment">
 
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="25dp"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="25dp"
+        android:text="Next"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:src="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913"/>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/title" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints"
+        tools:listitem="@layout/alphabet_layout" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="1"
-            android:rowCount="3"
-            tools:layout_editor_absoluteX="1dp">
-
-
-            <Button
-                android:id="@+id/A1"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="40dp"
-                android:text="\?\?\?\?"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/A2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_chainStyle="spread_inside" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="107dp"
-                android:layout_height="104dp"
-                android:src="@drawable/key"
-                app:layout_constraintBottom_toBottomOf="@+id/A1"
-                app:layout_constraintEnd_toEndOf="@+id/A1"
-                app:layout_constraintTop_toTopOf="@+id/A1" />
-
-            <Button
-                android:id="@+id/A2"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="40dp"
-                android:text="\?\?\?\?"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/A3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/A1" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="107dp"
-                android:layout_height="104dp"
-                android:src="@drawable/knife"
-                app:layout_constraintBottom_toBottomOf="@+id/A2"
-                app:layout_constraintTop_toTopOf="@+id/A2"
-                tools:layout_editor_absoluteX="274dp" />
-
-            <Button
-                android:id="@+id/A3"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="150dp"
-                android:text="\?\?\?\?"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/A2" />
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="107dp"
-                android:layout_height="104dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/keyboard"
-                app:layout_constraintBottom_toBottomOf="@+id/A3"
-                app:layout_constraintEnd_toEndOf="@+id/A3"
-                app:layout_constraintTop_toTopOf="@+id/A3" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="218dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.913"
-            app:menu="@menu/bottom_nav_menu" />
-
-    </LinearLayout>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
