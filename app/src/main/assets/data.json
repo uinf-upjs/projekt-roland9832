@@ -1,6 +1,86 @@
 {
   "words": [
     {
+      "letter" : "A",
+      "correctWord" : "apple",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "apple.png"
+    },
+    {
+      "letter" : "B",
+      "correctWord" : "blue",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "blue.png"
+    },
+    {
+      "letter" : "C",
+      "correctWord" : "car",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "car.png"
+    },
+    {
+      "letter" : "D",
+      "correctWord" : "door",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "door.png"
+    },
+    {
+      "letter" : "E",
+      "correctWord" : "egg",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "egg.png"
+    },
+    {
+      "letter" : "F",
+      "correctWord" : "fairy",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "fairy.png"
+    },
+    {
+      "letter" : "G",
+      "correctWord" : "gun",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "gun.png"
+    },
+    {
+      "letter" : "H",
+      "correctWord" : "hand",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "hand.png"
+    },
+    {
+      "letter" : "I",
+      "correctWord" : "ice",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "ice.png"
+    },
+    {
+      "letter" : "J",
+      "correctWord" : "jar",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "jar.png"
+    },
+    {
       "letter" : "K",
       "correctWord" : "key",
       "difficulty" : 1,
@@ -23,6 +103,118 @@
       "status" : "unsolved",
       "tries" : 0,
       "image" : "keyboard.png"
+    },
+    {
+      "letter" : "L",
+      "correctWord" : "lion",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "lion.png"
+    },
+    {
+      "letter" : "M",
+      "correctWord" : "mask",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "mask.png"
+    },
+    {
+      "letter" : "N",
+      "correctWord" : "ninja",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "ninja.png"
+    },
+    {
+      "letter" : "O",
+      "correctWord" : "onion",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "onion.png"
+    },
+    {
+      "letter" : "P",
+      "correctWord" : "pen",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "pen.png"
+    },
+    {
+      "letter" : "R",
+      "correctWord" : "ring",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "ring.png"
+    },
+    {
+      "letter" : "S",
+      "correctWord" : "sad",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "sad.png"
+    },
+    {
+      "letter" : "T",
+      "correctWord" : "table",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "table.png"
+    },
+    {
+      "letter" : "U",
+      "correctWord" : "umbrella",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "umbrella.png"
+    },
+    {
+      "letter" : "V",
+      "correctWord" : "vacuum",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "vacuum.png"
+    },
+    {
+      "letter" : "W",
+      "correctWord" : "wand",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "wand.png"
+    },
+    {
+      "letter" : "X",
+      "correctWord" : "xylophone",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "xylophone.png"
+    },
+    {
+      "letter" : "Y",
+      "correctWord" : "yeti",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "yeti.png"
+    },
+    {
+      "letter" : "Z",
+      "correctWord" : "zebra",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "zebra.png"
     }
   ]
 }
