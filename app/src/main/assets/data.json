@@ -1,0 +1,28 @@
+{
+  "words": [
+    {
+      "letter" : "K",
+      "correctWord" : "key",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "key.png"
+    },
+    {
+      "letter" : "K",
+      "correctWord" : "knife",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "knife.png"
+    },
+    {
+      "letter" : "K",
+      "correctWord" : "keyboard",
+      "difficulty" : 1,
+      "status" : "unsolved",
+      "tries" : 0,
+      "image" : "keyboard.png"
+    }
+  ]
+}

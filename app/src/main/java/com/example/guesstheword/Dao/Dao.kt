@@ -2,6 +2,7 @@ package com.example.guesstheword.Dao
 
 import androidx.room.Dao
 import androidx.room.Delete
+import androidx.room.Insert
 import androidx.room.Query
 import com.example.guesstheword.Entities.Word
 import kotlinx.coroutines.flow.Flow
@@ -16,6 +17,9 @@ interface WordDao{
     fun getWordOfLetterFromDifficulty(letter: Char, difficulty: Int): Word?
     @Delete
     suspend fun deleteWord(word: Word)
+
+    @Insert
+    suspend fun insertWord(word: Word)
 
     @Query("""
         UPDATE word 
