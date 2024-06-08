@@ -1,13 +1,11 @@
 package com.example.guesstheword.HomeDir
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.guesstheword.R
-
 
 class LetterAdapter(private val onClick: (String) -> Unit) : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
 

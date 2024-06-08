@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemClickListener
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -27,8 +26,11 @@ class HomeFragment : Fragment(), OnItemClickListener {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(context, 2)
         recyclerView.adapter = LetterAdapter { letter ->
-            // Handle item click
-            Toast.makeText(context, "Clicked: $letter", Toast.LENGTH_SHORT).show()
+            // Navigate to AlphabetFragment with the selected letter using Bundle
+            val bundle = Bundle().apply {
+                putString("letter", letter)
+            }
+            findNavController().navigate(R.id.action_homeFragment_to_alphabetFragment, bundle)
         }
 
         // Setup BottomNavigationView
@@ -55,6 +57,6 @@ class HomeFragment : Fragment(), OnItemClickListener {
     }
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        TODO("Not yet implemented")
+        // Not used, but required by OnItemClickListener interface
     }
 }

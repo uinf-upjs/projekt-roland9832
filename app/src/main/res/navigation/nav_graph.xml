@@ -16,9 +16,13 @@
 
     <fragment
         android:id="@+id/alphabetFragment"
-        android:name="com.example.guesstheword.AlphabetFragment"
+        android:name="com.example.guesstheword.AlphabetDir.AlphabetFragment"
         android:label="Alphabet"
-        tools:layout="@layout/fragment_alphabet" />
+        tools:layout="@layout/fragment_alphabet">
+        <argument
+            android:name="letter"
+            app:argType="string" />
+    </fragment>
 
     <fragment
         android:id="@+id/letterFragment"
